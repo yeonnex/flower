@@ -30,7 +30,7 @@ public class Logger {
     // 이름에서 알 수 있듯, 파일로부터 설정을 읽음
     public static void loadConfig(){
         try{
-            String classPath = getClassPath(); // Loger.class 가 위치한 디렉터리의 경로를 가져옴
+            String classPath = getClassPath(); // Loger 클래스가 위치한 디렉터리의 경로를 가져옴
             Path loggerConfigPath = Paths.get(classPath, CONFIG_FILENAME);
 
             File configFile = new File(loggerConfigPath.toString());
